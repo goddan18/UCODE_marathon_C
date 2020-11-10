@@ -1,0 +1,1 @@
+grep -i '\bredpill\b' "$@"
