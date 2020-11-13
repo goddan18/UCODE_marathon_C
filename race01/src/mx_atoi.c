@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 long mx_atoi(const char* str) {
     long n = 0;

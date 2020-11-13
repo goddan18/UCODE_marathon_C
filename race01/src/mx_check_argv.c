@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 bool mx_check_argv(char *str) {
     while (*str) {

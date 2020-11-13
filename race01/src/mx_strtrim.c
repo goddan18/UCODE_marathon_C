@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 char *mx_strtrim(const char *str) {
     if (str == NULL) return NULL;

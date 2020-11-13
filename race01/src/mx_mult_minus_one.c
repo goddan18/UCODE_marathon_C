@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 void mx_mult_minus_one(bool delete_minus1, bool delete_minus2, bool delete_minus3, long *num1, long *num2, long *numr) {
     if (delete_minus1) *num1 *= -1;

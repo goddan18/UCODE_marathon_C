@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 int main(int argc, char *argv[]) {
 

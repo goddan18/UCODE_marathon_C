@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 void mx_print_decode(bool is_q1, bool is_q2, bool is_qr, char *operand1, char operation, char *operand2, char *result, bool delete_minus1, bool delete_minus2, bool delete_minus3) {
     long length1 = mx_strlen(operand1);

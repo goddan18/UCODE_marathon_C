@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 bool mx_check_q_in_number(char *num_char, int size, int num) {
     bool res = true;

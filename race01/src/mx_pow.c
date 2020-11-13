@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 long mx_pow(long n, unsigned int pow) {
     long res = 1;

@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 void mx_help_print_decode(int i, int j, int k, char operation) {
     mx_printint(i);

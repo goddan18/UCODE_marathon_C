@@ -1,4 +1,4 @@
-#include "../inc/minilibmx.h"
+#include "minilibmx.h"
 
 void mx_decode(char *operand1, char operation, char *operand2, char *result, bool delete_minus1, bool delete_minus2, bool delete_minus3) {
 
