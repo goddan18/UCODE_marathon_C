@@ -1,9 +1,8 @@
-#include "minilibmx.h"
+#include "header.h"
 
-long mx_pow(long n, unsigned int pow) {
-    long res = 1;
+double mx_pow(double n, unsigned int pow) {
+    double res = 1.0;
     for(unsigned int i = 0; i < pow; i++)
         res *= n;
     return res;
 }
-

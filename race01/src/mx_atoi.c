@@ -1,22 +1,27 @@
-#include "minilibmx.h"
+#include "header.h"
 
-long mx_atoi(const char* str) {
-    long n = 0;
-    long c = 0;
-    if (str[0] == '-') {
-        c = 1;
-        str++;
-    }
-    while(*str >= '0' && *str <= '9') {
-        n *= 10;
-        if (!mx_isdigit(*str) || mx_isspace(*str)) return 0;
-        n += *str++;
-        if (*str && (!mx_isdigit(*str) || mx_isspace(*str))) return 0;
-        n -= '0';
-    }
-    if (*str != '\0') return 0;
-    if(c == 1)
-        n *= -1;
-    return n;
+long long mx_atoi(const char *str) {
+	const char* buffer;
+	while(*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v' || *str == '\f' || *str == '\r') {
+		str++;
+	}
+	long long num = 0;
+	int digit = (str[0] == '-') ? -1 : 1;
+	if (!(str[0] >= '0' && str[0] <= '9') && str[0] != '-' && str[0] != '+') {
+		return 0;
+	}
+	if (str[0] == '-' || str[0] == '+') {
+		str++;
+	}
+	buffer = str;
+	while(*buffer >= '0' && *buffer <= '9') {
+		num *= 10;
+		num += *buffer - '0';
+		buffer++;
+	}
+	if (*buffer != '\0') {
+		return 0;
+	}
+	return num * digit;
 }
 

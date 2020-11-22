@@ -1,4 +1,4 @@
-#include "minilibmx.h"
+#include "header.h"
 
 int mx_strlen(const char *s) {
 	return (*s) ? mx_strlen(++s) + 1 : 0;

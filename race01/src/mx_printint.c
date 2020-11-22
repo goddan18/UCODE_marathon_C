@@ -1,4 +1,4 @@
-#include "minilibmx.h"
+#include "header.h"
 
 void mx_printint(int n) {
 	char buffer[12];

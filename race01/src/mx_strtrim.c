@@ -1,4 +1,4 @@
-#include "minilibmx.h"
+#include "header.h"
 
 char *mx_strtrim(const char *str) {
     if (str == NULL) return NULL;
@@ -29,6 +29,4 @@ char *mx_strtrim(const char *str) {
     return arr;
     
 }
-
-
 
