@@ -18,8 +18,6 @@ char *mx_strnew(const int size);
 char *mx_strtrim(const char *str); 
 void mx_printerr(const char *s);
 double mx_pow(double n, unsigned int pow);
-int find_num_by_index(int number, int index);
-int num_length(int number);
 char *mx_itoa(long long number);
 
 void check_args(char *argv[], char *operand1, char *operation, char *operand2, char *result, 
